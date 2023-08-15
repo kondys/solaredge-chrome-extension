@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "My Extension",
+    "name": "SolarEdge Extension",
     "version": "1.0.0",
-    "description": "A simple Chrome extension with React.",
+    "description": "Display your SolarEdge power generation directly in your browser. Uses the SolarEdge API to fetch your power generation data.",
     "icons": {
       "16": "logo192.png",
       "48": "logo192.png",
