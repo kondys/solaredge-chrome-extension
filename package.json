@@ -10,10 +10,13 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "dayjs": "^1.11.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.4.2",
+    "use-chrome-storage": "^1.2.2",
     "web-vitals": "^2.1.0",
     "webextension-polyfill": "^0.10.0"
   },
@@ -42,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.7",
     "@types/chrome": "^0.0.243",
     "@types/webextension-polyfill": "^0.10.1",
     "customize-cra": "^1.0.0",

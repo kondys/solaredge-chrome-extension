@@ -4,21 +4,25 @@
     "version": "1.0.0",
     "description": "Display your SolarEdge power generation directly in your browser. Uses the SolarEdge API to fetch your power generation data.",
     "icons": {
-      "16": "logo192.png",
-      "48": "logo192.png",
-      "128": "logo192.png"
+      "16": "images/logo192.png",
+      "48": "images/logo192.png",
+      "128": "images/logo192.png"
     },
     "background": {
-      "service_worker": "./static/js/background.js"
+      "service_worker": "./static/js/background.js",
+      "type": "module"
     },
     "content_scripts": [
       {
-        "matches": ["<all_urls>"],
+        "matches": ["https://monitoring.solaredge.com/*", "https://monitoringapi.solaredge.com/*", "https://geolocator.littlemonkeyapps.com/*"],
         "js": ["./static/js/content.js"]
       }
     ],
     "action": {
       "default_popup": "index.html"
     },
-    "permissions": ["storage", "tabs"]
+    "permissions": [
+      "storage",
+      "alarms"
+    ]
   }
